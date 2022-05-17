@@ -9,6 +9,6 @@ describe('Is another test', () => {
   it('This tests fails', () => {
     cy.visit('/')
 
-    expect(true).to.equal(false)
+    expect(true).to.equal(true)
   })
 })

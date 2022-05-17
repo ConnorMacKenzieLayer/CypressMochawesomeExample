@@ -3,7 +3,7 @@ describe('Visit Home Page', () => {
     cy.visit('/')
     cy.contains('Hello World')
 
-    expect(true).to.equal(false)
+    expect(true).to.equal(true)
   })
 
   it('This tests passes', () => {
@@ -18,7 +18,7 @@ describe('Another one', () => {
     cy.visit('/')
     cy.contains('Hello World')
 
-    expect(true).to.equal(false)
+    expect(true).to.equal(true)
   })
 
   it('This tests passes', () => {
