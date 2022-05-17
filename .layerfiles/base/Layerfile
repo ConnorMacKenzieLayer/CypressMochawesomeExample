@@ -7,7 +7,14 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash && \
     apt install nodejs && \
     rm -f /etc/apt/sources.list.d/nodesource.list
 
+RUN apt update
+RUN apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
+
 COPY / /root
+
+RUN npm install -g http-server
+
+RUN npm install mocha mochawesome mochawesome-merge mochawesome-report-generator
 
 RUN npm install
 
