@@ -2,7 +2,7 @@
 FROM vm/ubuntu:18.04
 # To note: Layerfiles create VMs, *not* containers!
 
-MEMORY 2G
+MEMORY 6G
 
 # Install node
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash && \
