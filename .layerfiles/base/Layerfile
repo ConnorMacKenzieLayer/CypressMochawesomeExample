@@ -23,8 +23,8 @@ RUN npm install
 RUN BACKGROUND npm start
 EXPOSE WEBSITE http://localhost:8080
 
-SKIP REMAINING IF GIT_COMMIT_TITLE =~ [skip-tests]
+SKIP REMAINING IF GIT_COMMIT_TITLE =~ ^([skip-deploy]|[skip-tests])$
 
-SKIP REMAINING IF GIT_COMMIT_TITLE =~ [skip-deploy]
+RUN echo Hi!
 
 RUN echo Hello!
