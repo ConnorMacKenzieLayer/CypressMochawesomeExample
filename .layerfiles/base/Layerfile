@@ -22,3 +22,5 @@ RUN npm install
 
 RUN BACKGROUND npm start
 EXPOSE WEBSITE http://localhost:8080
+
+RUN true
