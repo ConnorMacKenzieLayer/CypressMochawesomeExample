@@ -25,4 +25,6 @@ EXPOSE WEBSITE http://localhost:8080
 
 SKIP REMAINING IF GIT_COMMIT_TITLE =~ [skip-tests]
 
+SKIP REMAINING IF GIT_COMMIT_TITLE =~ [skip-deploy]
+
 RUN echo Hello!
